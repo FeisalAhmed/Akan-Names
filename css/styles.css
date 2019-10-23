@@ -1,8 +1,9 @@
 .kwanza p{
     font-size: 25px;
+    color:red;
 }
 .container{
-    background-color:blue;
+    background-image:url(https://bit.ly/2WbA0nZ);
 }
 .jumbotron h1{
     font-style: italic;
@@ -10,5 +11,6 @@
 }
 .pili p{
     font-size:25px;
+    color:red;
 }
     
