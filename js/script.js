@@ -12,5 +12,11 @@ function getInput(){
     }else if(year == ""){
         alert("input correct year");
         return false;
-    }else if
+    }else if(month == ""){
+        alert("input correct month");
+        return false;
+    }else if(dayOfMonth == ""){
+        alert("input correct dayOfMonth");
+        return false;
+    };
 };
