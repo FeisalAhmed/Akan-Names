@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Akan Names</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="js/script.js">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -32,45 +32,39 @@
         </div>
         <div>
             <form>
-                <div class="form-group">
-                    <label for="century">century</label>
-                    <input type="number" class="form-control" id="century" aria-describedby="century"
-                        placeholder="Please Enter valid century" min="0" max="22">
-                </div>
-                <div class="form-group">
-                    <label for="month">month</label>
-                    <input type="number" class="form-control" id="month" placeholder="please Enter month" min="0" max="12">
+                <fiedset>
+                    <legend>
+                        <h3>complete the box below</h3>
+                    </legend>
+                    <div class="col-log-3">
+                        <label>year</label>
+                        <input id="year" type="number" class="form-control" placeholder="please input year"
+                            maxlength="4">
+                    </div>
+                    <div class="col-log-3">
+                        <label>month</label>
+                        <input id="month" type="number" class="form-control" placeholder="please input months"
+                            maxlength="12">
+                    </div>
+                    <div class="col-log-3">
+                        <label>date</label>
+                        <input id="date" type="number" class="form-control" placeholder="please input Day Of month" maxlength="30">
 
-                </div>
-                <div class="form-group">
-                    <label for="date of month">Date of month</label>
-                    <input type="number" class="form-control" id="monthDay" placeholder="Please Enter Date of Month"
-                        min="1" max="30">
-                </div>
-                <div class="form-group">
-                    <label for="year">Year</label>
-                    <input type="year" class="form-control" id="year" placeholder="please Enter Year of Birth" maxlength="4">
-
-                </div>
-                <div class="form-group form-check">
-                    <input type="radio" class="form-check-input" id="exampleCheck1" value="Male">
-                    <label class="form-check-label" for="exampleCheck1">Male</label>
-                </div>
-
-                <div class="form-group form-check">
-                    <input type="radio" class="form-check-input" id="exampleCheck1" value="Female">
-                    <label class="form-check-label" for="exampleCheck1">female</label>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <footer class="footer">
-                    <i class="far fa-copyright">copyright</i>
-                </footer>
+                    </div>
+                    <div>
+                            <input type="radio" name="gender" id="male1" value="male"> Male<br>
+                            <input type="radio" name="gender" id="female1" value="female"> Female<br>
+                    </div>
+                    <div>
+                            <input type="submit" onclick="getDayOfWeek()">
+                            <input type="reset" class="reset">
+                    </div>
+                </fiedset>
             </form>
         </div>
 
     </div>
-
+<script src="js/script.js"></script>
 </body>
 
 </html>
