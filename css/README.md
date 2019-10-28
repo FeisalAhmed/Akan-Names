@@ -7,4 +7,8 @@ Github
 ##TECHNOLOGY USED
 HTML,CSS,JAVA SCRIPT
 ##CONTACT DETAIL
-feizulf@gmail
+feizulf@gmail.com
+##HELP
+one mans work
+##known bugs
+none
