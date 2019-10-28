@@ -3,7 +3,8 @@ function getDayOfWeek() {
     var year = parseInt(document.getElementById("year").value);
     var month = parseInt(document.getElementById("month").value);
     var date = parseInt(document.getElementById("date").value);
-    var gender = document.getElementById("gender");
+    var male1 = document.getElementById("male1");
+    var female1 = document.getElementById("female1");
     var yearString = year.toString();
     var centuryString = yearString.slice(0, 2);
     var century = parseInt(centuryString);
@@ -12,9 +13,9 @@ function getDayOfWeek() {
 
 
     var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "yaw", "Kofi", "Kwame"];
-    var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
+    var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-    if (male1.checked==true) {
+    if (male1.checked == true) {
         switch (dayOfWeek) {
             case 0:
                 alert("Your akan name is: " + maleNames[dayOfWeek]);
@@ -33,8 +34,8 @@ function getDayOfWeek() {
 
         }
     }
-    else if (female1.checked==true)
-        switch (dayOfTheWeek) {
+    else if (female1.checked == true) {
+        switch (dayOfWeek) {
             case 0:
                 alert("your akan name is: " + femaleNames[dayOfWeek]);
             case 1:
@@ -50,5 +51,6 @@ function getDayOfWeek() {
             case 6:
                 alert("your akan name is: " + femaleNames[dayOfWeek]);
         }
+    }
 }
 
