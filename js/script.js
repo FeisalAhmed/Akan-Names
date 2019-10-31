@@ -1,5 +1,6 @@
 // Collect form data and assign to variables
 function getDayOfWeek() {
+
     var year = parseInt(document.getElementById("year").value);
     var month = parseInt(document.getElementById("month").value);
     var date = parseInt(document.getElementById("date").value);
@@ -15,10 +16,18 @@ function getDayOfWeek() {
     var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "yaw", "Kofi", "Kwame"];
     var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-    if (male1.checked == true) {
+
+
+    if (year == "") {
+        alert("Please enter the date");
+    } else if (month == "") {
+        alert("please enter the month");
+    } else if (date == "") {
+        alert("please enter the year");
+    } else if (male1.checked == true) {
         switch (dayOfWeek) {
             case 0:
-                alert("Your akan name is: " + maleNames[dayOfWeek]);
+                alert("Your akan  is: " + maleNames[dayOfWeek]);
             case 1:
                 alert("your akan name is: " + maleNames[dayOfWeek]);
             case 2:
@@ -37,7 +46,7 @@ function getDayOfWeek() {
     else if (female1.checked == true) {
         switch (dayOfWeek) {
             case 0:
-                alert("your akan name is: " + femaleNames[dayOfWeek]);
+                alert("your akan namename is: " + femaleNames[dayOfWeek]);
             case 1:
                 alert("your akan name is: " + femaleNames[dayOfWeek]);
             case 2:
